@@ -9,23 +9,25 @@
     <title>JSON pretty printer</title>
 </head>
 <body>
-    <div>
-        This page is solely built for debugging purposes only. The data will not be stored in any way.
+    <div class="explain-text">
+        This JSON pretty printer is solely built for debugging purposes. The data will not be stored in any way. <br>
+        - Little mousey
     </div>
     <div id="input">
         <h2>Input JSON</h2>
-        <textarea name="input-field" id="input-field" cols="70" rows="40" placeholder="Paste here your JSON"></textarea>
+        <textarea name="input-field" id="input-field" cols="70" rows="35" placeholder="Paste your JSON here"></textarea>
         <div class="center">
             <button onclick="convertJSON()">Pretty print</button>
         </div>
     </div>
 
     <div id="output">
-        <h2>Output JSON</h2>
-        <textarea name="output-field" id="output-field" cols="70" rows="40" placeholder="Output will come here"></textarea>
+        <h2>Output Pretty Print JSON</h2>
+        <textarea name="output-field" id="output-field" cols="70" rows="35" placeholder="Output will come here"></textarea>
         <div class="center">
             <button onclick="copyAll()">Select and copy all</button>
-            <span id="flash-message" class="is-hidden">The text has been copied</span>
+            <span id="flash-message" class="is-hidden">The text has been copied to clipboard!</span>
+            <span id="error-message" class="is-hidden">There is no text to copy!</span>
         </div>
     </div>
 </body>

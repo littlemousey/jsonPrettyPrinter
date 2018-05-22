@@ -1,6 +1,11 @@
 body {
     font-size: 14px;
+    font-family: Georgia;
     background-color: #f5f6fa;
+}
+
+.explain-text {
+    margin: 10px;
 }
 
 textarea {
